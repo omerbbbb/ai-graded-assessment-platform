@@ -209,9 +209,7 @@ git clone https://github.com/omerbbbb/ai-graded-assessment-platform.git
 cd ai-graded-assessment-platform
 npm install
 
-# Set real passwords. The code falls back to insecure defaults if these are unset.
-export EXAMINER_PASSWORD='choose-a-strong-password'
-export INTERVIEWER_PASSWORD='choose-another-password'
+# Set both passwords before running.export INTERVIEWER_PASSWORD='choose-another-password'
 
 npm start            # http://localhost:3000
 ```
@@ -296,6 +294,7 @@ See [`scripts/tests/README.md`](scripts/tests/README.md) (Hebrew) for details.
 - **No CI.** Tests are run manually, and most need a running server.
 - Some safeguards were discussed but not built: anti-cheating measures (paste blocking, tab-switch counting) and a structured interview-swap flow.
 - The app sits in a subfolder of the repository.
+- - **Not security-audited.** There is no login rate limiting and the endpoints have not had a security review. It was built for a supervised, one-day event, not for exposure as a public service.
 
 ## How it was built
 
