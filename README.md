@@ -218,8 +218,7 @@ npm start            # http://localhost:3000
 
 Then open `http://localhost:3000` (examinee), `/examiner` (admin), `/interviewer` and `/grade`.
 
-> **Important:** if `EXAMINER_PASSWORD` is not set, the server falls back to `admin`, and `INTERVIEWER_PASSWORD` falls back to `interview`. Always set both, locally and in production.
-
+> **Important:** both passwords are required. If `EXAMINER_PASSWORD` or `INTERVIEWER_PASSWORD` is not set, that login is disabled.
 ### Environment variables
 
 | Variable | Required | Purpose |
