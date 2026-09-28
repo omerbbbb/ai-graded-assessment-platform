@@ -223,8 +223,8 @@ Then open `http://localhost:3000` (examinee), `/examiner` (admin), `/interviewer
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `EXAMINER_PASSWORD` | **Yes** | Admin and grading screens (falls back to `admin`) |
-| `INTERVIEWER_PASSWORD` | Yes, if interviewers are used | Interviewer screen (falls back to `interview`) |
+| `EXAMINER_PASSWORD` | **Yes** | Admin and grading screens  |
+| `INTERVIEWER_PASSWORD` | Yes, if interviewers are used | Interviewer screen|
 | `ANTHROPIC_API_KEY` | For real grading | Without it, grading runs in demo mode only |
 | `GRADING_MODEL` | No | Default `claude-opus-5` |
 | `GRADING_EFFORT` | No | `low` / `medium` / `high` / `xhigh` / `max`, default `medium` |
