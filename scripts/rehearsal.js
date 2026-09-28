@@ -10,7 +10,8 @@
    ========================================================================= */
 const BASE = process.env.BASE || 'http://localhost:3000';
 const N = Number(process.env.N || 40);
-const EXAMINER_PW = process.env.EXAMINER_PASSWORD || 'admin';
+const EXAMINER_PW = process.env.EXAMINER_PASSWORD;
+
 
 const SUBJECT_POOL = ['מתמטיקה', 'אנגלית', 'לשון', 'היסטוריה', 'פיזיקה', 'ביולוגיה', 'מדעים לחטיבה', 'רובוטיקה'];
 
