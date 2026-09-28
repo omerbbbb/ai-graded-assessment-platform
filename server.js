@@ -20,7 +20,7 @@ const monday = require('./lib/monday');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const EXAMINER_PASSWORD = process.env.EXAMINER_PASSWORD || 'admin';
+const EXAMINER_PASSWORD = process.env.EXAMINER_PASSWORD;
 const SLOT_DURATION_SEC = Number(process.env.SLOT_DURATION_SEC || 1200); // 20:00
 
 // ---------- קונפיג מקומי (מפתח AI + webhook לגוגל שיטס) ----------
@@ -134,7 +134,7 @@ function authExaminee(req, res, next) {
 // ---------- תפקיד שלישי: מראיין ----------
 // כניסה בסיסמה משותפת + בחירת שם מהרשימה. המראיין הוא *קורא בלבד* על הלו"ז —
 // הוא יכול לבקש החלפה, והמנהל מאשר. כך אין שני גורמים שכותבים לאותו מקום.
-const INTERVIEWER_PASSWORD = process.env.INTERVIEWER_PASSWORD || 'interview';
+const INTERVIEWER_PASSWORD = process.env.INTERVIEWER_PASSWORD;
 const interviewerTokens = new Map();   // token -> interviewer_id
 
 function authInterviewer(req, res, next) {
