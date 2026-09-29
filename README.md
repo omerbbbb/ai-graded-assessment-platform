@@ -211,7 +211,7 @@ npm install
 
 # Set both passwords before running.
 export EXAMINER_PASSWORD='choose-a-strong-password'
-export INTERVIEWER_PASSWORD='choose-another-password'ssword'
+export INTERVIEWER_PASSWORD='choose-another-password'
 
 npm start            # http://localhost:3000
 ```
